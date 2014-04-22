@@ -1,0 +1,5 @@
+*.pid
+*.pyc
+*.swp
+*~
+content/notebooks/.ipynb_checkpoints
