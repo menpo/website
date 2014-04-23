@@ -10,16 +10,8 @@ from docopt import docopt
 import os.path as op
 import os
 from build import safe_call
-from glob import glob
+from jinja2 import Environment, FileSystemLoader
 
-main_notebooks_header = """Title: {}
-
-"""
-
-landing_page_header = """Title: {0}
-url: notebooks/{1}
-save_as: notebooks/{1}/index.html
-"""
 
 content_path = op.join(os.getcwd(), 'content')
 pages_path = op.join(content_path, 'pages')
@@ -28,11 +20,16 @@ built_notebooks_path = op.join(static_website_path, 'notebooks')
 built_documentation_path = op.join(static_website_path, 'docs')
 pelican_path = op.join(os.getcwd(), 'pelican')
 
-link_template = '[{}]({})'
-pages_link_template = '[{}]({{filename}}/pages/{})'
+nb_all_tmplt_path = 'all_notebooks_landing.md'
+docs_all_tmplt_path = 'all_docs_landing.md'
+nb_ver_tmplt_path = 'version_notebooks_landing.md'
+
+env = Environment(loader=FileSystemLoader(op.join(content_path, 'templates')),
+                  trim_blocks=True, lstrip_blocks=True)
 
 
 def build_pelican():
+    # Call pelican externally in order to build the HTML
     os.chdir(pelican_path)
     command = ['pelican', content_path, '-o', static_website_path,
                '-s', op.join(pelican_path, 'pelicanconf.py')]
@@ -45,62 +42,80 @@ def build_pelican():
 
 
 def build_notebooks_markdown():
-    import itertools
+    notebooks_landing_versions = []
 
+    # Get a list of all the folders in the built notebooks path
+    # Should be one folder per version (only return the folders!)
     notebooks_versions_paths = [op.join(built_notebooks_path, p) for p
                                 in os.listdir(built_notebooks_path)]
-    # Create the main notebook page
-    with open(op.join(pages_path, 'notebooks.md'), 'w') as f:
-        # Write head
-        f.write(main_notebooks_header.format('Notebooks', 'notebooks'))
+    notebooks_versions_paths = filter(op.isdir, notebooks_versions_paths)
 
-        # Write each tag
-        for version_path in notebooks_versions_paths:
-            tag_name = op.basename(version_path)
-            notebook_landing_filename = '{}-notebooks.md'.format(tag_name)
-            link = pages_link_template.format(tag_name,
-                                              notebook_landing_filename)
-            f.write('  - {}'.format(link))
-            f.write('\n')
-
-    # Create a landing page for each version
+    # For every folder we found, walk through it and build a landing page
+    # for all the notebooks in that version
     for version_path in notebooks_versions_paths:
-        tag_name = op.basename(version_path)
-        notebook_landing_basename = '{}-notebooks.md'.format(tag_name)
-        notebooks_paths = [[op.relpath(op.join(top, f),
-                                       static_website_path) for f in files]
-                           for top, _, files in os.walk(version_path)]
-        # Flatten lists
-        notebooks_paths = list(itertools.chain(*notebooks_paths))
+        print('Found a version of the notebooks at: {}'.format(version_path))
+        # Record this version for the main landing page
+        version = op.basename(version_path)
+        notebooks_landing_versions.append(version)
 
-        # Write a landing page for each set of
-        notebook_landing_path = op.join(pages_path,
-                                        notebook_landing_basename)
-        with open(notebook_landing_path, 'w') as f:
-            f.write(landing_page_header.format('Notebooks ' + tag_name, tag_name))
-            for p in notebooks_paths:
-                base_name = op.basename(p)
-                notebook_name = op.splitext(base_name)[0]
-                link = link_template.format(notebook_name, base_name)
-                f.write('  - {}'.format(link))
-                f.write('\n')
+        # Walk through every folder in the notebooks and build a seperate
+        # header per folder within the landing page
+        notebooks_folders = []
+        for curr_path, dirs, files in os.walk(version_path):
+            dirname = op.basename(curr_path)
+
+            # The root is a special case! Ensure the folder name is in the
+            # form of a title (capitalized words)
+            header = 'Root' if dirname == version else dirname.title()
+            folder_info = {'header': header, 'notebooks': []}
+            # For each notebook in the folder generate a link
+            for f in files:
+                nbook_path = op.relpath(op.join(curr_path, f), version_path)
+                nbook_name = op.splitext(f)[0]
+                folder_info['notebooks'].append({'text': nbook_name,
+                                                 'url': nbook_path})
+            # Save the folder information
+            notebooks_folders.append(folder_info)
+
+        # Build the landing page!
+        ver_landing_tmplt = env.get_template(nb_ver_tmplt_path)
+        ver_landing_output = ver_landing_tmplt.render(
+            notebooks=notebooks_folders, version=version)
+
+        output_md_path = op.join(pages_path, 'notebook_versions',
+                                 version + '.md')
+        with open(output_md_path, 'w') as f:
+            f.write(ver_landing_output)
+
+    # Build the landing page for ALL the versions (so you can choose a version
+    # to view)
+    all_landing_tmplt = env.get_template(nb_all_tmplt_path)
+    all_landing_output = all_landing_tmplt.render(
+        versions=notebooks_landing_versions)
+    with open(op.join(pages_path, 'notebooks.md'), 'w') as f:
+        f.write(all_landing_output)
 
 
 def build_documentation_markdown():
+    # Get all built version from the built documentation,
+    # so only return directories
     docs_versions_paths = [op.join(built_documentation_path, p) for p
                            in os.listdir(built_documentation_path)]
-    # Create the main notebook page
-    with open(op.join(pages_path, 'documentation.md'), 'w') as f:
-        # Write head
-        f.write(main_notebooks_header.format('Documentation'))
+    docs_versions_paths = filter(op.isdir, docs_versions_paths)
+    for d in docs_versions_paths:
+        print('Found a version of the docs at: {}'.format(d))
 
-        # Write each tag
-        for version_path in docs_versions_paths:
-            tag_name = op.basename(version_path)
-            docs_path = op.join('docs', tag_name)
-            link = link_template.format(tag_name, docs_path)
-            f.write('  - {}'.format(link))
-            f.write('\n')
+    # Get a list of every version
+    docs_versions = [op.basename(d) for d in docs_versions_paths]
+
+
+    # Build the landing page for ALL the versions (so you can choose a version
+    # to view)
+    all_landing_tmplt = env.get_template(docs_all_tmplt_path)
+    all_landing_output = all_landing_tmplt.render(
+        versions=docs_versions)
+    with open(op.join(pages_path, 'documentation.md'), 'w') as f:
+        f.write(all_landing_output)
 
 
 def run(args=None):
