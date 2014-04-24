@@ -14,7 +14,7 @@ from build import safe_call, get_git_tag
 
 
 menpo_path = op.join(os.getcwd(), 'menpo')
-docs_path = op.join(menpo_path, 'docs')
+docs_path = op.join(menpo_path, 'docs', 'source')
 static_website_path = op.join(os.getcwd(), 'static_website_output')
 base_output_path = op.join(static_website_path, 'docs')
 
