@@ -1,9 +1,9 @@
 [submodule "menpo"]
 	path = menpo
-	url = git://github.com/menpo/menpo.git
+	url = git@github.com:menpo/menpo.git
 [submodule "menpo-notebooks"]
 	path = menpo-notebooks
-	url = git://github.com/menpo/menpo-notebooks.git
+	url = git@github.com:menpo/menpo-notebooks.git
 [submodule "static_website_output"]
 	path = static_website_output
-	url = git://github.com/menpo/menpo.github.io.git
+	url = git@github.com:menpo/menpo.github.io.git
