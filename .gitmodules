@@ -1,0 +1,6 @@
+[submodule "menpo"]
+	path = menpo
+	url = git://github.com/menpo/menpo.git
+[submodule "menpo-notebooks"]
+	path = menpo-notebooks
+	url = git://github.com/menpo/menpo-notebooks.git
