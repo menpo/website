@@ -28,8 +28,6 @@ def get_git_tag(repo_path):
     import subprocess
     # Change the working directory to the repository path
     os.chdir(repo_path)
-    if not os.path.isdir(".git"):
-        raise ValueError('Not a valid repository path')
     try:
         p = subprocess.Popen(["git", "describe",
                               "--tags", "--dirty", "--always"],
