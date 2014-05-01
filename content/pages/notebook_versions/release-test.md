@@ -7,6 +7,7 @@ save_as: notebooks/release-test/index.html
   - [Cython - Optimising Tutorial](Cython - Optimising Tutorial.html)
   - [ICCV 2013 3D Lucas-Kanade](ICCV 2013 3D Lucas-Kanade.html)
   - [Importing Assets](Importing Assets.html)
+  - [index](index.html)
   - [menpo.aam - AAMs](menpo.aam - AAMs.html)
   - [menpo.align.procrustes](menpo.align.procrustes.html)
   - [menpo.io - Understanding Importers](menpo.io - Understanding Importers.html)
