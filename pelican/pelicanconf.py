@@ -6,8 +6,8 @@ from __future__ import unicode_literals
 THEME = '../themes/zurb-F5-basic'
 
 AUTHOR = u'Patrick Snape'
-SITENAME = u'menpo.github.io'
-SITEURL = u'http://menpo.github.io'
+SITENAME = u'menpo'
+SITEURL = u'http://menpo.io'
         
 TIMEZONE = 'Europe/London'
 
