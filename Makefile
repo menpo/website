@@ -1,10 +1,4 @@
 all: website
 
-notebooks:
-	python build.py notebooks
-
-docs:
-	python build.py docs
-
-website: docs notebooks
+website:
 	python build.py pelican
