@@ -7,7 +7,7 @@ If anything is *at all* unclear, please let us know on the
 [menpo-users](https://groups.google.com/forum/#!forum/menpo-users) mailing list.
 
 The installation instructions are split up in to a number of sections. Please
-follow the carefully, in order:
+follow them carefully, in order:
 
   1. [Install A Python Environment](#install_miniconda)
   2. [Using Conda](#using_conda)
@@ -21,7 +21,7 @@ called **Miniconda**.
 
 **[Download Miniconda from here](http://conda.pydata.org/miniconda.html)**
 
-Download the **Python 2.7** copy of Miniconda for your architecture of Windows
+Download the **Python 2** copy of Miniconda for your architecture of Windows
 (32-bit or 64-bit). If you are unsure what version of Windows you are running,
 you can find out by visiting
 [this page](http://support.microsoft.com/kb/827218).
@@ -106,7 +106,7 @@ continue.
 ![Accept Install]({filename}/pages/installation/windows/images/Windows-Install-Accept.png)
 ********************************************************************************
 
-It may take a short time to download and install all of Menpos dependencies,
+It may take a short time to download and install all of Menpo's dependencies,
 during which you will see a number of progress bars. The command is complete
 when the extracting and linking processes show **COMPLETE**.
 
