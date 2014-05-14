@@ -10,7 +10,7 @@ uses a different Python ecosystem, we are happy to hear from you on the
 so that we can extend these instructions!
 
 **Python assumes some basic knowledge of using a command prompt within
-Windows.**  
+Windows.**
 **Please let us know your skill level in this area:**
 
  - <big>[Novice]({filename}/pages/installation/windows/novice.md)</big>

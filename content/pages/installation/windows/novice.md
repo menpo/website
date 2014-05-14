@@ -97,10 +97,6 @@ Installing Menpo only requires a single command:
     ::console
     [menpo] C:\>conda install -c menpo menpo
 
-********************************************************************************
-![Install Command]({filename}/pages/installation/windows/images/Windows-Install-Menpo.png)
-********************************************************************************
-
 Conda will then attempt to install all of our requirements. It appears there are
 many, but this is due to the minimal nature of the environment we originally
 created. As before, Conda will prompt you to proceed, press **Enter** to
