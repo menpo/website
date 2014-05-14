@@ -15,7 +15,7 @@ follow them carefully, in order:
   4. [Installing Menpo Into Conda](#install_menpo)
   5. [Begin Using Menpo](#notebooks)
 
-##### Install A Python Environment {: #install_miniconda}
+### Install A Python Environment {: #install_miniconda}
 First, we need to install a Python environment. The Python environment we will
 use is called **conda**, and it is provided by an installation package
 called **Miniconda**.
@@ -39,7 +39,7 @@ ticked on the **Advanced Installation Options** page as shown below:
 ![Miniconda Advanced Installation Options]({filename}/pages/installation/windows/images/Windows-Miniconda-Settings.png)
 ********************************************************************************
 
-##### Using Conda {: #using_conda}
+### Using Conda {: #using_conda}
 After installing Miniconda, we should have access to two new commands within
 the command prompt. Python, unlike Matlab, does not come with an integrated
 development environment and so commands have to be run using the command prompt.
@@ -50,7 +50,7 @@ To continue, we need to open a command prompt, which can be found by selecting
 ![Windows Find Command Prompt]({filename}/pages/installation/windows/images/Windows-Find-CommandPrompt.png)
 ********************************************************************************
 
-##### Setting Up A Fresh Environment {: #conda_env}
+### Setting Up A Fresh Environment {: #conda_env}
 We now need to create an environment to store all of our Python packages inside.
 It doesn't matter what path you are inside within the command prompt, the
 `conda` command will not create any files *locally*. So, we use the command
@@ -92,7 +92,7 @@ Notice that the command prompt is new prefixed with a label:
 
 This let's you know that the `menpo` environment is enabled.
 
-##### Installing Menpo Into Conda {: #install_menpo}
+### Installing Menpo Into Conda {: #install_menpo}
 Installing Menpo only requires a single command:
 
     ::console
@@ -117,7 +117,7 @@ when the extracting and linking processes show **COMPLETE**.
 
 **Congratulations! You have now installed the latest version of Menpo!**
 
-##### Begin Using Menpo {: #notebooks}
+### Begin Using Menpo {: #notebooks}
 In order to start using Menpo, we suggest you have a look through our collection
 of IPython notebooks. They can be found [here]({filename}/pages/notebooks.md).
 Follow the instructions there to download the notebooks and run them. If you

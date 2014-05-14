@@ -11,6 +11,7 @@ so that we can extend these instructions!
 
 **Python assumes some basic knowledge of using a command prompt within
 Windows.**
+
 **Please let us know your skill level in this area:**
 
  - <big>[Novice]({filename}/pages/installation/windows/novice.md)</big>
