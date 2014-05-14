@@ -15,4 +15,3 @@ Windows.**
 
  - <big>[Novice]({filename}/pages/installation/windows/novice.md)</big>
  - <big>[Expert]({filename}/pages/installation/windows/expert.md)</big>
-

@@ -43,16 +43,15 @@ continuing.
     **Windows**
 
         ::console
-        C:\> cd NOTEBOOKS_PATH
-        C:\> activate menpo
-        [menpo] C:\> ipython notebook
+        C:\>cd NOTEBOOKS_PATH
+        NOTEBOOKS_PATH>activate menpo
+        [menpo] NOTEBOOKS_PATH>ipython notebook
 
  3. A browser should open and show the ipython notebook browser. Click a
     notebook to open it. You can now run the notebooks by executing each code
     cell and following the documentation provided inside the notebook. If you
     are unfamiliar with the IPython notebook environment, please consult
     their [documentation](http://ipython.org/notebook.html).
-
 
 #### Previous Notebooks
 These notebooks are versioned in an identical manner

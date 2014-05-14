@@ -13,6 +13,7 @@ follow them carefully, in order:
   2. [Using Conda](#using_conda)
   3. [Setting Up A Fresh Environment](#conda_env)
   4. [Installing Menpo Into Conda](#install_menpo)
+  5. [Begin Using Menpo](#notebooks)
 
 ##### Install A Python Environment {: #install_miniconda}
 First, we need to install a Python environment. The Python environment we will
@@ -115,3 +116,11 @@ when the extracting and linking processes show **COMPLETE**.
 ********************************************************************************
 
 **Congratulations! You have now installed the latest version of Menpo!**
+
+##### Begin Using Menpo {: #notebooks}
+In order to start using Menpo, we suggest you have a look through our collection
+of IPython notebooks. They can be found [here]({filename}/pages/notebooks.md).
+Follow the instructions there to download the notebooks and run them. If you
+need more help you can consult the
+[documentation](http://menpo.readthedocs.org) or ask for help on the
+[menpo-users](https://groups.google.com/forum/#!forum/menpo-users) mailing list.

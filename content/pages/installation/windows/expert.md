@@ -29,15 +29,5 @@ any time you feel confused, please refer to the
         :::console
         [menpo] C:\>conda install -c menpo menpo
 
-  6. Download the notebooks from [here]({filename}/pages/notebooks.md):
-    - Make sure you choose the version of the notebooks that corresponds to
-      your copy of Menpo.
-  7. In a command prompt, navigate to where the notebooks were downloaded, make
-     sure the Menpo conda environment is activated, and run:
-
-        :::console
-        [menpo] C:\>ipython notebook
-
-  8. Open any of the notebooks to begin learning how to use Menpo. For a more
-     in-depth user guide, head to the
-     [documentation](http://menpo.readthedocs.org).
+  6. Head over to the [notebooks page]({filename}/pages/notebooks.md) to begin
+     experimenting with Menpo.
