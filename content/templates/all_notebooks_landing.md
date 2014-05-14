@@ -33,9 +33,19 @@ continuing.
     Begin by opening a command prompt/terminal and changing to the directory
     where you extracted the notebooks:
 
+    **OSX/Linux**
+
         ::console
         $ cd NOTEBOOKS_PATH
-        $ ipython notebook
+        $ source activate menpo
+        (menpo) $ ipython notebook
+
+    **Windows**
+
+        ::console
+        C:\> cd NOTEBOOKS_PATH
+        C:\> activate menpo
+        [menpo] C:\> ipython notebook
 
  3. A browser should open and show the ipython notebook browser. Click a
     notebook to open it. You can now run the notebooks by executing each code
