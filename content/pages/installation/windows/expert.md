@@ -7,6 +7,10 @@ commands in to the command prompt. If you feel uncomfortable with this, or at
 any time you feel confused, please refer to the
 [novice instructions.]({filename}/pages/installation/windows/novice.md)
 
+**It is important to note that as part of the installation, you will be creating
+an isolated environment to execute Python inside. Make sure that this
+environment is activated in order to be able to use Menpo!**
+
   1. Download and install
      [Miniconda for Python 2](http://conda.pydata.org/miniconda.html)
      on Windows. Make sure to choose the correct architecture (32/64) for your

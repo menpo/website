@@ -1,6 +1,6 @@
-Title: Linux Novice Installation
-url: installation/linux/novice.html
-save_as: installation/linux/novice.html
+Title: OS X Novice Installation
+url: installation/osx/novice.html
+save_as: installation/osx/novice.html
 
 In these instructions we aim to make it very simple to install Menpo.
 If anything is *at all* unclear, please let us know on the

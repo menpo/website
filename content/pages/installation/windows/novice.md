@@ -6,6 +6,10 @@ In these instructions we aim to make it very simple to install Menpo.
 If anything is *at all* unclear, please let us know on the
 [menpo-users](https://groups.google.com/forum/#!forum/menpo-users) mailing list.
 
+**It is important to note that as part of the installation, you will be creating
+an isolated environment to execute Python inside. Make sure that this
+environment is activated in order to be able to use Menpo!**
+
 The installation instructions are split up in to a number of sections. Please
 follow them carefully, in order:
 
@@ -90,7 +94,9 @@ Notice that the command prompt is new prefixed with a label:
     ::console
     [menpo] C:\>
 
-This let's you know that the `menpo` environment is enabled.
+This let's you know that the `menpo` environment is enabled. It is important
+to ensure that the `menpo` environment is activated before attempting to
+use Menpo in any way!
 
 ### Installing Menpo Into Conda {: #install_menpo}
 Installing Menpo only requires a single command:

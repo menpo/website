@@ -3,7 +3,7 @@ url: installation/osx/index.html
 save_as: installation/osx/index.html
 
 Although OS X comes with a Python installation, it is generally regarded as
-a dangerous option to edit this environment. Therefore, to ensure the system
+dangerous to alter this environment. Therefore, to ensure the system
 Python environment is isolated, we advocate the use of
 [Conda](http://conda.pydata.org/).
 
