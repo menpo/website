@@ -8,7 +8,7 @@ any time you feel confused, please refer to the
 [novice instructions.]({filename}/pages/installation/windows/novice.md)
 
   1. Download and install
-     [Miniconda for Python 2.7](http://conda.pydata.org/miniconda.html)
+     [Miniconda for Python 2](http://conda.pydata.org/miniconda.html)
      on Windows. Make sure to choose the correct architecture (32/64) for your
      copy of Windows.
   2. After following the instructions you should be able to access `python`
@@ -24,7 +24,7 @@ any time you feel confused, please refer to the
         C:\>activate menpo
         [menpo] C:\>
 
-  5. Install Menpo and **all** of it's dependancies:
+  5. Install Menpo and **all** of it's dependencies:
 
         :::console
         [menpo] C:\>conda install -c menpo menpo

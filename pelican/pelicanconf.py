@@ -29,7 +29,8 @@ RELATIVE_URLS = True
 DISQUS_SITENAME = u'menpo'
 
 PATH = '../content'
-STATIC_PATHS = ['pages/installation/windows/images']
+STATIC_PATHS = ['pages/installation/windows/images',
+                'pages/installation/linux/images']
 
 ARTICLE_DIR = u'articles'
 PAGE_DIR = u'pages'

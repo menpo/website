@@ -3,7 +3,7 @@ url:
 save_as: index.html
 
 Menpo is a statistical modelling toolkit, providing all the tools required to
-build, fit, visualize, and test generative deformable models like
+build, fit, visualize, and test deformable models like
 **Active Appearance Models**, **Constrained Local Models**, **Supervised Descent
 Method** and **Morphable Models**.
 
@@ -13,6 +13,6 @@ broad class of rigid objects and have been heavily researched for use with
 faces.
 
 Menpo is written in **Python** and we provide a simple and easy method of
-installation using [conda](http://conda.pydata.org/). We suggest you head over
+installation using [Conda](http://conda.pydata.org/). We suggest you head over
 to the [installation instructions]({filename}/pages/installation/index.md)
 to get started.
