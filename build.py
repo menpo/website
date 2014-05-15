@@ -10,8 +10,20 @@ Options:
    --version    Show Version
 """
 from __future__ import print_function
-from docopt import docopt
 import os
+
+from docopt import docopt
+import requests
+
+
+def get_releases():
+    r = requests.get('https://api.github.com/repos/menpo/menpo/releases')
+    response = r.json()
+    # Only include release tags
+    response = filter(lambda x: x['tag_name'][0] == 'v', response)
+    # For if we want to filter prereleases
+    # response = filter(lambda x: not x.prerelease, response)
+    return response
 
 
 def safe_call(args_list):
@@ -22,48 +34,12 @@ def safe_call(args_list):
     return call(args_list, bufsize=4096, stdout=null_device, stderr=null_device)
 
 
-def get_git_latest_tag(repo_path):
-    import subprocess
-    # Change the working directory to the repository path
-    os.chdir(repo_path)
-    try:
-        p = subprocess.Popen(["git", "describe",
-                              "--tags", "--dirty", "--always"],
-                             stdout=subprocess.PIPE)
-    except EnvironmentError:
-        raise EnvironmentError('Failed to run git')
-
-    stdout = p.communicate()[0]
-    if p.returncode != 0:
-        raise EnvironmentError('Executing git returned a non-zero '
-                               'return code of {}'.format(p.returncode))
-
-    return stdout.strip()
-
-
-def get_git_all_tags(repo_path):
-    import subprocess
-    # Change the working directory to the repository path
-    os.chdir(repo_path)
-    try:
-        p = subprocess.Popen(["git", "tag", "-l"],
-                             stdout=subprocess.PIPE)
-    except EnvironmentError:
-        raise EnvironmentError('Failed to run git')
-
-    stdout = p.communicate()[0]
-    if p.returncode != 0:
-        raise EnvironmentError('Executing git returned a non-zero '
-                               'return code of {}'.format(p.returncode))
-
-    return stdout.split()
-
-
 if __name__ == '__main__':
     args = docopt(__doc__, version='0.0.1')
 
     if args['pelican']:
         import build_pelican
+
         exit(build_pelican.run())
     else:
         exit(print(docopt(__doc__, argv='--help')))

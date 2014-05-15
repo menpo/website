@@ -6,11 +6,13 @@ Usage:
 This script will build the pelican files.
 """
 from __future__ import print_function
-from docopt import docopt
 import os.path as op
 import os
-from build import safe_call, get_git_all_tags
+
+from docopt import docopt
 from jinja2 import Environment, FileSystemLoader
+
+from build import safe_call, get_releases
 
 
 content_path = op.join(os.getcwd(), 'content')
@@ -39,11 +41,9 @@ def build_pelican():
 
 
 def build_notebooks_markdown():
-    # Get a list of all the folders in the built notebooks path
-    # Should be one folder per version (only return the folders!)
-    notebooks_versions = get_git_all_tags(menpo_notebooks_path)
-    # Only pick up release tags
-    notebooks_versions = filter(lambda x: x[0] == 'v', notebooks_versions)
+    # Get a list of all treleases from github
+    notebooks_releases = get_releases()
+    notebooks_versions = [release['tag_name'] for release in notebooks_releases]
 
     # For every folder we found, walk through it and build a landing page
     # for all the notebooks in that version
@@ -52,8 +52,6 @@ def build_notebooks_markdown():
 
     # Build the landing page for ALL the versions (so you can choose a version
     # to view)
-    # Reverse the list so most recent is first!
-    notebooks_versions.reverse()
     # Get the most recent tag
     latest_version = notebooks_versions.pop(0)
 
