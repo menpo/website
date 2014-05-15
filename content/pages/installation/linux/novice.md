@@ -21,8 +21,8 @@ follow them carefully, in order:
   6. [Begin Using Menpo](#notebooks)
 
 ### Prerequisites {: #prerequisites}
-First, we need to install a Python environment. Python does not come with a
-graphical user interface and so we will need to run a number of commands
+First, we need to install an isolated Python environment. Python does not come
+with a graphical user interface and so we will need to run a number of commands
 in the terminal. You can access the terminal by pressing the **Super** key
 to open the Dash and searching for **terminal**.
 

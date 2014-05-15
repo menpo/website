@@ -18,8 +18,8 @@ environment is activated in order to be able to use Menpo!**
 
         ::console
         $ cd ~/Downloads
-        $ chmod +x Miniconda-3.4.2-Linux-x86_64.sh
-        $ ./Miniconda-3.4.2-Linux-x86_64.sh
+        $ chmod +x Miniconda-3.4.2-MacOSX-x86_64.sh
+        $ ./Miniconda-3.4.2-MacOSX-x86_64.sh
 
   3. After following the instructions you should be able to access `conda` from
      a terminal.
