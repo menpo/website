@@ -1,6 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import sys
+import os
+
+# Add path above so we can access latest release version
+sys.path.insert(0, os.path.abspath('..'))
+
+from releases import get_menpo_releases
+LATEST_RELEASE = get_menpo_releases()[0]['tag_name']
 
 # Avoid having hard coded paths to these files
 THEME = '../themes/zurb-F5-basic'
@@ -8,7 +16,7 @@ THEME = '../themes/zurb-F5-basic'
 AUTHOR = u'Patrick Snape'
 SITENAME = u'menpo'
 SITEURL = u'http://menpo.io'
-        
+
 TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = u'en'
@@ -42,7 +50,6 @@ PAGE_URL = u'{slug}.html'
 PAGE_SAVE_AS = u'{slug}.html'
 PAGE_LANG_URL = u'{slug}-{lang}.html'
 PAGE_LANG_SAVE_AS = u'{slug}-{lang}.html'
-
 
 ARTICLE_URL = u'blog/{date:%Y}/{slug}/'
 ARTICLE_SAVE_AS = u'blog/{date:%Y}/{slug}/index.html'

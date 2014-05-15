@@ -13,17 +13,6 @@ from __future__ import print_function
 import os
 
 from docopt import docopt
-import requests
-
-
-def get_releases():
-    r = requests.get('https://api.github.com/repos/menpo/menpo/releases')
-    response = r.json()
-    # Only include release tags
-    response = filter(lambda x: x['tag_name'][0] == 'v', response)
-    # For if we want to filter prereleases
-    # response = filter(lambda x: not x.prerelease, response)
-    return response
 
 
 def safe_call(args_list):

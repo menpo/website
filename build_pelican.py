@@ -12,7 +12,8 @@ import os
 from docopt import docopt
 from jinja2 import Environment, FileSystemLoader
 
-from build import safe_call, get_releases
+from build import safe_call
+from releases import get_menpo_releases
 
 
 content_path = op.join(os.getcwd(), 'content')
@@ -42,7 +43,7 @@ def build_pelican():
 
 def build_notebooks_markdown():
     # Get a list of all treleases from github
-    notebooks_releases = get_releases()
+    notebooks_releases = get_menpo_releases()
     notebooks_versions = [release['tag_name'] for release in notebooks_releases]
 
     # For every folder we found, walk through it and build a landing page

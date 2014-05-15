@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/foundation.min.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css" />
     <link rel="stylesheet" href="{{ SITEURL }}/theme/css/pygments.css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -33,11 +34,11 @@
 <div class="large-9 columns">
     <ul class="button-group navigation">
         <li><a href="{{ SITEURL }}" class="button secondary small">Home</a></li>
+        <li><a href="{{ SITEURL }}/changelogs.html" class="button secondary small">Changelogs</a></li>
         <li><a href="{{ SITEURL }}/installation/" class="button secondary small">Installation</a></li>
-        <li><a href="http://menpo.readthedocs.org/" class="button secondary small">Documentation</a></li>
         <li><a href="{{ SITEURL }}/notebooks.html" class="button secondary small">Notebooks</a></li>
-        <li><a href="http://www.github.com/menpo/menpo" class="button secondary small">Source Code</a></li>
         <li><a href="{{ SITEURL }}/blog" class="button secondary small">Blog</a></li>
+        <li><a href="http://menpo.readthedocs.org/" class="button secondary small">Documentation <i class="fa fa-external-link-square"></i></a></li>
     </ul>
 </div>
 </div>
@@ -53,49 +54,12 @@
     {% block content %}{% endblock %}
     </div>
     <!-- End Main Content -->
-    <!--
     <aside class="large-3 columns">
-        <h5 class="sidebar-title">Site</h5>
+        <h5 class="sidebar-title">Latest Release</h5>
         <ul class="side-nav">
-            <li><a href="{{ SITEURL }}/{{ ARCHIVES_URL }}">Archives</a>
-            <li><a href="{{ SITEURL }}/{{ TAGS_URL }}">Tags</a>
-            {% if FEED_RSS %}
-            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_ATOM }}" rel="alternate">Atom feed</a></li>
-            {% endif %}
-            {% if FEED_RSS %}
-            <li><a href="{{ FEED_DOMAIN }}/{{ FEED_RSS }}" rel="alternate">RSS feed</a></li>
-            {% endif %}
+            <li>{{ LATEST_RELEASE }}</li>
         </ul>
-
-        {% if categories %}		
-        <h5 class="sidebar-title">Categories</h5>
-        <ul class="side-nav">
-        {% for cat, null in categories %}
-            <li><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-        {% endfor %}   
-        </ul>
-        {% endif %}
-
-        {% if LINKS %}
-        <h5 class="sidebar-title">Links</h5>
-        <ul class="side-nav">
-        {% for name, link in LINKS %}
-            <li><a href="{{ link }}">{{ name }}</a></li>
-        {% endfor %}
-        </ul>
-        {% endif %}
-		
-        {% if SOCIAL %}
-        <h5 class="sidebar-title">Social</h5>
-        <ul class="side-nav">
-        {% for name, link in SOCIAL %}
-            <li><a href="{{ link }}">{{ name }}</a></li>
-        {% endfor %}
-        </ul>
-        {% endif %}
-
     </aside>
-    -->
 </div> <!-- End Main Content and Sidebar -->
 
 
