@@ -19,8 +19,7 @@ If you feel like you want to contribute in any way, please head over to our
 <img src="pages/images/team/joan_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
 
 Joan is a PhD student at the Department of Computing, Imperial College London,
-under the supervision of [Dr. Stefanos Zafeiriou](#stefanos)
-and Prof. Maja Pantic.
+under the supervision of [Dr. Stefanos Zafeiriou](#stefanos).
 His research interests lie in the fields of Compute Vision, Machine Learning
 and Human-Computer Interaction. His current work is focused on
 Deformable Face Tracking and Affect Analysis.
@@ -34,7 +33,7 @@ Deformable Face Tracking and Affect Analysis.
 
 Epameinondas is a Research Assistant/PhD student at the Department of Computing
 at Imperial College London, under the supervision of
-[Dr. Stefanos Zafeiriou](#stefanos) and Prof. Maja Pantic. His research
+[Dr. Stefanos Zafeiriou](#stefanos). His research
 interests lie in the field of Computer Vision, Pattern Recognition and
 Machine Learning with applications in Human-Computer Interaction.
 </div>
