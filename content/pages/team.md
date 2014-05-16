@@ -28,11 +28,11 @@ Deformable Face Tracking and Affect Analysis.
 
 <div style="clear: both;"></div>
 
-#### Nontas Antonakos {: #nontas}
+#### Epameinondas Antonakos {: #nontas}
 <div style="clear: both;">
 <img src="pages/images/team/nontas_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
 
-Nontas is a Research Assistant/PhD student at the Department of Computing
+Epameinondas is a Research Assistant/PhD student at the Department of Computing
 at Imperial College London, under the supervision of
 [Dr. Stefanos Zafeiriou](#stefanos) and Prof. Maja Pantic. His research
 interests lie in the field of Computer Vision, Pattern Recognition and
