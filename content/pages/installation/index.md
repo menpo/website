@@ -14,3 +14,28 @@ focus on getting Conda installed on each of the platforms.
   - [Windows]({filename}/pages/installation/windows/landing.md)
   - [OS X]({filename}/pages/installation/osx/landing.md)
   - [Linux]({filename}/pages/installation/linux/landing.md)
+
+### Upgrading
+Assuming you have followed the installation instructions above, you may need
+to upgrade your version of Menpo to that latest. You can check if you
+have the latest version by running the following commands within a Python
+interpreter:
+
+    ::python
+    >>> import menpo
+    >>> print(menpo.__version__)
+
+If you need to upgrade, you can do this using `conda` using the command **(make
+the sure the `menpo` environment is activated)**:
+
+**OSX/Linux**
+
+    ::console
+    $ source activate menpo
+    (menpo) $ conda update -c menpo menpo
+
+**Windows**
+
+    ::console
+    C:\>activate menpo
+    [menpo] C:\>conda update -c menpo menpo

@@ -15,9 +15,9 @@ of the notebook contain only static output and thus cannot be run.
 To download the notebooks and use them within your copy of Menpo, use the
 links provided.
 
-### **(v0.2.5) - Latest Notebooks**
-  - **[Browse Online](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.2.5/notebooks/)**
-  - **[Download](https://github.com/menpo/menpo-notebooks/archive/v0.2.5.zip)**
+### **(v0.3.0) - Latest Notebooks**
+  - **[Browse Online](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.3.0/notebooks/)**
+  - **[Download](https://github.com/menpo/menpo-notebooks/archive/v0.3.0.zip)**
 
 ### Running The Notebooks Locally
 In order to experiment with the Menpo codebase, we suggest you download the
@@ -68,6 +68,9 @@ To check which version of Menpo you are using, run:
 inside of a Python interpreter.
 
 #### Versions
+  - v0.2.5
+    - [Browse](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.2.5/notebooks/)
+    - [Download](https://github.com/menpo/menpo-notebooks/archive/v0.2.5.zip)
   - v0.2.4
     - [Browse](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.2.4/notebooks/)
     - [Download](https://github.com/menpo/menpo-notebooks/archive/v0.2.4.zip)
