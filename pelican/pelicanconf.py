@@ -35,6 +35,7 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 DISQUS_SITENAME = u'menpo'
+GOOGLE_ANALYTICS = u'UA-52093814-1'
 
 PATH = '../content'
 STATIC_PATHS = ['pages/installation/windows/images',
