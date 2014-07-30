@@ -38,7 +38,9 @@ DISQUS_SITENAME = u'menpo'
 GOOGLE_ANALYTICS = u'UA-52093814-1'
 
 PATH = '../content'
-STATIC_PATHS = ['pages/installation/windows/images',
+STATIC_PATHS = ['articles/files',
+                'articles/images',
+                'pages/installation/windows/images',
                 'pages/installation/linux/images',
                 'pages/installation/osx/images',
                 'pages/images/team']
