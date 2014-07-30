@@ -5,7 +5,7 @@ save_as: installation/linux/expert.html
 We assume you are very familiar with the Linux environment and with entering
 commands inside a terminal. If you feel uncomfortable with this, or at
 any time you feel confused, please refer to the
-[novice instructions.]({filename}/pages/installation/linux/novice.md)
+[full instructions.]({filename}/pages/installation/linux/index.md)
 
 **It is important to note that as part of the installation, you will be creating
 an isolated environment to execute Python inside. Make sure that this

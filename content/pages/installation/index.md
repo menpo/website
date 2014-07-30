@@ -11,9 +11,9 @@ focus on getting Conda installed on each of the platforms.
 
 **Before we begin, please choose an operating system:**
 
-  - [Windows]({filename}/pages/installation/windows/landing.md)
-  - [OS X]({filename}/pages/installation/osx/landing.md)
-  - [Linux]({filename}/pages/installation/linux/landing.md)
+  - [Windows]({filename}/pages/installation/windows/index.md)
+  - [OS X]({filename}/pages/installation/osx/index.md)
+  - [Linux]({filename}/pages/installation/linux/index.md)
 
 ### Upgrading
 Assuming you have followed the installation instructions above, you may need

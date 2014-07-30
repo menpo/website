@@ -1,10 +1,14 @@
-Title: Windows Novice Installation
-url: installation/windows/novice.html
-save_as: installation/windows/novice.html
+Title: Windows Installation
+url: installation/windows/index.html
+save_as: installation/windows/index.html
 
 In these instructions we aim to make it very simple to install Menpo.
 If anything is *at all* unclear, please let us know on the
 [menpo-users](https://groups.google.com/forum/#!forum/menpo-users) mailing list.
+
+*If you already have a conda environment, and consider yourself a conda expert,
+you may want to view the 
+[short instructions]({filename}/pages/installation/windows/expert.md).*
 
 **It is important to note that as part of the installation, you will be creating
 an isolated environment to execute Python inside. Make sure that this

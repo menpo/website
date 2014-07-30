@@ -5,7 +5,7 @@ save_as: installation/osx/expert.html
 We assume you are very familiar with the OS X environment and with entering
 commands inside a terminal. If you feel uncomfortable with this, or at
 any time you feel confused, please refer to the
-[novice instructions.]({filename}/pages/installation/osx/novice.md)
+[full instructions.]({filename}/pages/installation/osx/index.md)
 
 **It is important to note that as part of the installation, you will be creating
 an isolated environment to execute Python inside. Make sure that this

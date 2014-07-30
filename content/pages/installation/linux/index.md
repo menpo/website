@@ -1,10 +1,14 @@
-Title: OS X Novice Installation
-url: installation/osx/novice.html
-save_as: installation/osx/novice.html
+Title: Linux Installation
+url: installation/linux/index.html
+save_as: installation/linux/index.html
 
 In these instructions we aim to make it very simple to install Menpo.
 If anything is *at all* unclear, please let us know on the
 [menpo-users](https://groups.google.com/forum/#!forum/menpo-users) mailing list.
+
+*If you already have a conda environment, and consider yourself a conda expert,
+you may want to view the 
+[short instructions]({filename}/pages/installation/linux/expert.md).*
 
 **It is important to note that as part of the installation, you will be creating
 an isolated environment to execute Python inside. Make sure that this
@@ -21,28 +25,36 @@ follow them carefully, in order:
   6. [Begin Using Menpo](#notebooks)
 
 ### Prerequisites {: #prerequisites}
-First, we need to install an isolated Python environment.
-Python does not come with a graphical user interface and so we will need to run
-a number of commands in the terminal. You can access the terminal by pressing
-**Command + Space** to open spotlight and search for **terminal**.
+First, we need to install an isolated Python environment. Python does not come
+with a graphical user interface and so we will need to run a number of commands
+in the terminal. You can access the terminal by pressing the **Super** key
+to open the Dash and searching for **terminal**.
 
 ********************************************************************************
-![OS X Find Terminal]({filename}/pages/installation/osx/images/OSX-Terminal.png)
+![Linux Find Terminal]({filename}/pages/installation/linux/images/Linux-Terminal.png)
 ********************************************************************************
 
-We only support Menpo on the newer Intel Mac machines, all of which are 64-bit.
-Therefore, we assume you are using one of these machines.
+We need to make sure you install the correct software for your
+architecture (32-bit or 64-bit). If you are unsure what version of Ubuntu you
+are running, you can find out by running the following command in a terminal:
+
+    ::console
+    $ uname -m
+
+This will output a short string that tells you what version of Linux you
+are using.
 
 ### Install A Python Environment {: #install_miniconda}
 The Python environment we will use is called **conda**, and it is provided by
 an installation package called **Miniconda**.
 
-**[Download Miniconda from here](http://conda.pydata.org/miniconda.html)**
+**[Download Miniconda from here](http://cosnda.pydata.org/miniconda.html)**
 
-Download the **Python 2** copy of Miniconda for OSX.
+Download the **Python 2** copy of Miniconda for your architecture of Ubuntu
+(32-bit or 64-bit).
 
 ********************************************************************************
-![OS X Miniconda Landing Page]({filename}/pages/installation/osx/images/OSX-Miniconda-Landing.png)
+![Linux Miniconda Landing Page]({filename}/pages/installation/linux/images/Linux-Miniconda-Landing.png)
 ********************************************************************************
 
 After downloading Miniconda, you need to change to that directory within a
@@ -52,8 +64,8 @@ by running:
 
     ::console
     $ cd ~/Downloads
-    $ chmod +x Miniconda-3.4.2-MacOSX-x86_64.sh
-    $ ./Miniconda-3.4.2-MacOSX-x86_64.sh
+    $ chmod +x Miniconda-3.4.2-Linux-x86_64.sh
+    $ ./Miniconda-3.4.2-Linux-x86_64.sh
 
 The name of the Miniconda **may** be different, but you just need to run `chmod`
 in order to make the script executable. Once the installation has begun, accept
@@ -63,7 +75,7 @@ prompted whether or not the installer should prepend the Miniconda install
 location to your **PATH**:
 
 ********************************************************************************
-![Miniconda Advanced Installation Options]({filename}/pages/installation/osx/images/OSX-Miniconda-Settings.png)
+![Miniconda Advanced Installation Options]({filename}/pages/installation/linux/images/Linux-Miniconda-Settings.png)
 ********************************************************************************
 
 ### Using Conda {: #using_conda}
@@ -97,7 +109,7 @@ Conda will create a new environment for you and give you some information
 about activating your new environment called `menpo`.
 
 ********************************************************************************
-![Environment Created]({filename}/pages/installation/osx/images/OSX-Env-Created.png)
+![Environment Created]({filename}/pages/installation/linux/images/Linux-Env-Created.png)
 ********************************************************************************
 
 Now, activate the `menpo` environment with the command:
@@ -106,7 +118,7 @@ Now, activate the `menpo` environment with the command:
     $ source activate menpo
 
 ********************************************************************************
-![Activate Menpo Environment]({filename}/pages/installation/osx/images/OSX-Activate-Env.png)
+![Activate Menpo Environment]({filename}/pages/installation/linux/images/Linux-Activate-Env.png)
 ********************************************************************************
 
 Notice that the terminal is new prefixed with a label:
@@ -130,7 +142,7 @@ created. As before, Conda will prompt you to proceed, type **y** and press
 **Enter** to continue.
 
 ********************************************************************************
-![Accept Install]({filename}/pages/installation/osx/images/OSX-Install-Accept.png)
+![Accept Install]({filename}/pages/installation/linux/images/Linux-Install-Accept.png)
 ********************************************************************************
 
 It may take a short time to download and install all of Menpo's dependencies,
@@ -138,7 +150,7 @@ during which you will see a number of progress bars. The command is complete
 when the extracting and linking processes show **COMPLETE**.
 
 ********************************************************************************
-![Installation Complete]({filename}/pages/installation/osx/images/OSX-Install-Complete.png)
+![Installation Complete]({filename}/pages/installation/linux/images/Linux-Install-Complete.png)
 ********************************************************************************
 
 **Congratulations! You have now installed the latest version of Menpo!**

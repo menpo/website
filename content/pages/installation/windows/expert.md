@@ -5,7 +5,7 @@ save_as: installation/windows/expert.html
 We assume you are very familiar with the Windows environment and with entering
 commands in to the command prompt. If you feel uncomfortable with this, or at
 any time you feel confused, please refer to the
-[novice instructions.]({filename}/pages/installation/windows/novice.md)
+[full instructions.]({filename}/pages/installation/windows/index.md)
 
 **It is important to note that as part of the installation, you will be creating
 an isolated environment to execute Python inside. Make sure that this
