@@ -5,19 +5,21 @@ import sys
 import os
 
 # Add path above so we can access latest release version
-sys.path.insert(0, os.path.abspath('..'))
+script_path = os.path.dirname(os.path.realpath(__file__))
+sys.path.insert(0, script_path)
+sys.path.insert(0, os.path.abspath(os.path.join(script_path, '..')))
 
 from releases import get_menpo_releases
-LATEST_RELEASE = get_menpo_releases()[0]['tag_name']
+LATEST_RELEASE = get_menpo_releases()[0][u'tag_name']
 
 # Avoid having hard coded paths to these files
-THEME = '../themes/zurb-F5-basic'
+THEME = u'../themes/zurb-F5-basic'
 
 AUTHOR = u'Patrick Snape'
 SITENAME = u'menpo'
 SITEURL = u'http://menpo.io'
 
-TIMEZONE = 'Europe/London'
+TIMEZONE = u'Europe/London'
 
 DEFAULT_LANG = u'en'
 
@@ -34,20 +36,36 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-DISQUS_SITENAME = u'menpo'
+PLUGIN_PATHS = [os.path.join(script_path, u'pelican_plugins')]
+PLUGINS = [u'sitemap', u'share_post']
+
+SITEMAP = {
+    u'format': u'xml',
+    u'priorities': {
+        u'articles': 1.0,
+        u'indexes': 0.5,
+        u'pages': 1.0
+    },
+    u'changefreqs': {
+        u'articles': u'monthly',
+        u'indexes': u'daily',
+        u'pages': u'monthly'
+    }
+}
+
 GOOGLE_ANALYTICS = u'UA-52093814-1'
 
-PATH = '../content'
-STATIC_PATHS = ['articles/files',
-                'articles/images',
-                'pages/installation/windows/images',
-                'pages/installation/linux/images',
-                'pages/installation/osx/images',
-                'pages/images/team']
+PATH = u'../content'
+STATIC_PATHS = [u'articles/files',
+                u'articles/images',
+                u'pages/installation/windows/images',
+                u'pages/installation/linux/images',
+                u'pages/installation/osx/images',
+                u'pages/images/team']
 
-ARTICLE_DIR = u'articles'
-PAGE_DIR = u'pages'
-INDEX_SAVE_AS = 'blog/index.html'
+ARTICLE_PATHS = [u'articles']
+PAGE_PATHS = [u'pages']
+INDEX_SAVE_AS = u'blog/index.html'
 OUTPUT_PATH = u'../static_website_output'
 
 PAGE_URL = u'{slug}.html'
@@ -70,3 +88,5 @@ AUTHOR_SAVE_AS = u'blog/author/{slug}.html'
 AUTHORS_URL = u'blog/authors.html'
 AUTHORS_SAVE_AS = u'blog/authors.html'
 ARCHIVES_SAVE_AS = u'blog/archives.html'
+
+SUMMARY_MAX_LENGTH = 100
