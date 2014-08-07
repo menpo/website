@@ -1,7 +1,23 @@
 <h6 class="subheader" title="{{ article.date.isoformat() }}">{{ article.locale_date }}
-    {# {% if article.author %}
-    By <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
-    {% endif %} #}
+    {% if article.authors %}
+		[
+		{% for author in article.authors %}
+			<a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+		{% endfor %}
+        ]
+	{% endif %}
+
+	{% if article.share_post and article.status != 'draft' %}
+		<span id="post-share-links" style="float:right">
+			<a href="{{article.share_post['twitter']}}" target="_blank" title="Share on Twitter"><i class="fa fa-twitter-square fa-lg"></i></a>
+			|
+			<a href="{{article.share_post['facebook']}}" target="_blank" title="Share on Facebook"><i class="fa fa-facebook-square fa-lg"></i></a>
+			|
+			<a href="{{article.share_post['google-plus']}}" target="_blank" title="Share on Google Plus"><i class="fa fa-google-plus-square fa-lg"></i></a>
+			|
+			<a href="{{article.share_post['email']}}" target="_blank" title="Share via Email"><i class="fa fa-envelope-square fa-lg"></i></a>
+		</span>
+	{% endif %}
 </h6>
 
 {% import 'translations.html' as translations with context %}
