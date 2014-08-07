@@ -1,3 +1,6 @@
 [submodule "static_website_output"]
 	path = static_website_output
 	url = git@github.com:menpo/menpo.github.io.git
+[submodule "pelican/pelican_plugins"]
+	path = pelican/pelican_plugins
+	url = git@github.com:getpelican/pelican-plugins.git
