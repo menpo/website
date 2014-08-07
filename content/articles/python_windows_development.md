@@ -4,7 +4,7 @@ Tagline: Setting up Visual Studio 2008 for building Python 2.7 C-extensions on W
 Slug: python_windows_development
 Category: Blog
 Tags: Windows, Python, Visual Studio, C
-Author: Patrick Snape
+Authors: Patrick Snape
 
 ## Why develop on Windows?
 The Menpo team is dedicated to providing conda packages for all platforms. By far the biggest hurdle towards this goal was successfully building our package on Windows. There is one major reason for this: **Visual Studio 2008** [^1] [^2]. Visual Studio 2008 (VS2008) is a requirement for building Python extensions on Windows. This is due to the fact that compiled extensions link against a specific C++ redistributable. [According to advice that I have read](http://stackoverflow.com/questions/15311492/linking-libs-compiled-against-msvcrt-dll-into-a-visual-studio-10-c-app), linking against different redistributables in the same application can cause instabilities. Although there is meant to be some limited support for building with cygwin, I've also read numerous StackOverflow/forum posts that lament strange segmentation faults with cygwin compiled extensions. 

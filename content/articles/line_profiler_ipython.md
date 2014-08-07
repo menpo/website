@@ -4,7 +4,7 @@ Tagline: A quick guide up-to-date guide to setting up line_profiler with IPython
 Slug: line_profiler_ipython
 Category: Blog
 Tags: IPython, profiling, tip
-Author: James Booth
+Authors: James Booth
 
 ### Installation
 
