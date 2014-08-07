@@ -16,7 +16,7 @@ If you feel like you want to contribute in any way, please head over to our
 ### Members
 #### Joan Alabort-i-Medina {: #joan}
 <div>
-<img src="pages/images/team/joan_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
+<img alt="Joan Alabort-i-Medina" src="pages/images/team/joan_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
 
 Joan is a PhD student at the Department of Computing, Imperial College London,
 under the supervision of [Dr. Stefanos Zafeiriou](#stefanos).
@@ -29,7 +29,7 @@ Deformable Face Tracking and Affect Analysis.
 
 #### Epameinondas Antonakos {: #nontas}
 <div style="clear: both;">
-<img src="pages/images/team/nontas_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
+<img alt="Nontas Antonakos" src="pages/images/team/nontas_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
 
 Epameinondas is a Research Assistant/PhD student at the Department of Computing
 at Imperial College London, under the supervision of
@@ -42,17 +42,18 @@ Machine Learning with applications in Human-Computer Interaction.
 
 #### James Booth {: #james}
 <div style="clear: both;">
-<img src="pages/images/team/james_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
+<img alt="James Booth" src="pages/images/team/james_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
 
-James is an all round swell guy supervised by
-[Dr. Stefanos Zafeiriou](#stefanos).
+James is a PhD candidate under the supervision of
+[Dr. Stefanos Zafeiriou](#stefanos) investigating the robust creation
+of 3D Morphable Models.
 </div>
 
 <div style="clear: both;"></div>
 
 #### Patrick Snape {: #patrick}
 <div style="clear: both;">
-<img src="pages/images/team/patrick_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
+<img alt="Patrick Snape" src="pages/images/team/patrick_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
 
 
 Patrick is a PhD candidate under the supervision of
@@ -67,7 +68,7 @@ stereo.
 
 #### Dr. Stefanos Zafeiriou {: #stefanos}
 <div style="clear: both;">
-<img src="pages/images/team/stefanos_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
+<img alt="Stefanos Zafeiriou" src="pages/images/team/stefanos_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
 
 Dr. Stefanos Zafeiriou is a Lecturer (equivalent to Assistant Professor) in
 Pattern Recognition/Statistical Machine Learning for Computer Vision in the

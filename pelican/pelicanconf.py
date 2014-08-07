@@ -61,7 +61,9 @@ STATIC_PATHS = [u'articles/files',
                 u'pages/installation/windows/images',
                 u'pages/installation/linux/images',
                 u'pages/installation/osx/images',
-                u'pages/images/team']
+                u'pages/images/team',
+                u'pages/images',
+                u'pages/paper']
 
 ARTICLE_PATHS = [u'articles']
 PAGE_PATHS = [u'pages']
