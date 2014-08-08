@@ -48,7 +48,7 @@ are using.
 The Python environment we will use is called **conda**, and it is provided by
 an installation package called **Miniconda**.
 
-**[Download Miniconda from here](http://cosnda.pydata.org/miniconda.html)**
+**[Download Miniconda from here](http://conda.pydata.org/miniconda.html)**
 
 Download the **Python 2** copy of Miniconda for your architecture of Ubuntu
 (32-bit or 64-bit).
