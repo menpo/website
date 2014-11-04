@@ -18,3 +18,21 @@ def get_menpo_releases():
     releases = get_releases('menpo', 'menpo')
     releases = filter(lambda x: x['tag_name'][0] == 'v', releases)
     return releases
+
+
+def get_menpofit_releases():
+    releases = get_releases('menpo', 'menpofit')
+    releases = filter(lambda x: x['tag_name'][0] == 'v', releases)
+    return releases
+
+
+def get_menpo3d_releases():
+    releases = get_releases('menpo', 'menpo3d')
+    releases = filter(lambda x: x['tag_name'][0] == 'v', releases)
+    return releases
+
+
+def get_menpodetect_releases():
+    releases = get_releases('menpo', 'menpodetect')
+    releases = filter(lambda x: x['tag_name'][0] == 'v', releases)
+    return releases

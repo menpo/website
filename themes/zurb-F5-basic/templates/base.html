@@ -57,9 +57,12 @@
     </div>
     <!-- End Main Content -->
     <aside class="large-3 columns">
-        <h5 class="sidebar-title">Latest Release</h5>
+        <h5 class="sidebar-title">Latest Releases</h5>
         <ul class="side-nav">
-            <li>{{ LATEST_RELEASE }}</li>
+            <li><img src="http://img.shields.io/badge/menpo-{{ LATEST_MENPO_RELEASE }}-orange.svg" /></li>
+            <li><img src="http://img.shields.io/badge/menpofit-{{ LATEST_MENPOFIT_RELEASE }}-orange.svg" /></li>
+            <li><img src="http://img.shields.io/badge/menpo3d-{{ LATEST_MENPO3D_RELEASE }}-orange.svg" /></li>
+            <li><img src="http://img.shields.io/badge/menpodetect-{{ LATEST_MENPODETECT_RELEASE }}-orange.svg" /></li>
         </ul>
     </aside>
 </div> <!-- End Main Content and Sidebar -->

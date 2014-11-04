@@ -9,8 +9,12 @@ script_path = os.path.dirname(os.path.realpath(__file__))
 sys.path.insert(0, script_path)
 sys.path.insert(0, os.path.abspath(os.path.join(script_path, '..')))
 
-from releases import get_menpo_releases
-LATEST_RELEASE = get_menpo_releases()[0][u'tag_name']
+from releases import (get_menpo_releases, get_menpo3d_releases,
+                      get_menpodetect_releases, get_menpofit_releases)
+LATEST_MENPO_RELEASE = get_menpo_releases()[0][u'tag_name']
+LATEST_MENPO3D_RELEASE = get_menpo3d_releases()[0][u'tag_name']
+LATEST_MENPODETECT_RELEASE = get_menpodetect_releases()[0][u'tag_name']
+LATEST_MENPOFIT_RELEASE = get_menpofit_releases()[0][u'tag_name']
 
 # Avoid having hard coded paths to these files
 THEME = u'../themes/zurb-F5-basic'
