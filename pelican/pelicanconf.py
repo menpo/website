@@ -20,8 +20,8 @@ LATEST_MENPOFIT_RELEASE = get_menpofit_releases()[0][u'tag_name']
 THEME = u'../themes/zurb-F5-basic'
 
 AUTHOR = u'Patrick Snape'
-SITENAME = u'menpo.io'
-SITEURL = u'http://menpo.io'
+SITENAME = u'menpo'
+SITEURL = u'http://menpo.org'
 
 TIMEZONE = u'Europe/London'
 
