@@ -10,7 +10,7 @@ def get_releases(user, repo, include_prerelease=False):
 
     # For if we want to filter prereleases
     if not include_prerelease:
-        response = filter(lambda x: not x['prerelease'], response)
+        response = [x for x in response if not x['prerelease']]
     return response
 
 
