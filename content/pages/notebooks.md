@@ -5,19 +5,28 @@ save_as: notebooks.html
 As part of the project, we maintain a set of IPython notebooks that help
 illustrate how Menpo should be used.
 
-The notebooks are kept inside their
+The notebooks for Menpo itself are kept inside their
 [own Github repository](http://www.github.com/menpo/menpo-notebooks).
 If you wish to view the static output of the notebooks, feel free to browse
 them online using the provided links. This gives a great way to passively read
 the notebooks without needing a full Python environment. Note that these copies
 of the notebook contain only static output and thus cannot be run.
 
-To download the notebooks and use them within your copy of Menpo, use the
-links provided.
+Menpo started as a single monolithic project but since the release of
+Menpo 0.4.0 has been split into separate specialized packages that are
+much easier to maintain and reason about. Notebooks for [menpofit](http://www.github.com/menpo/menpofit-notebooks),
+[menpo3d](http://www.github.com/menpo/menpo3d-notebooks), and
+[menpodetect](http://www.github.com/menpo/menpodetect-notebooks) are kept
+in their own repositories. However, we have yet to make the first
+official release of these projects. When they are released,
+online-browsable notebooks will be made available too.
 
-### **(v0.4.0a3) - Latest Notebooks**
-  - **[Browse Online](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.4.0a3/notebooks/)**
-  - **[Download](https://github.com/menpo/menpo-notebooks/archive/v0.4.0a3.zip)**
+To download the Menpo notebooks and use them within your copy of Menpo,
+use the links provided.
+
+### **(v0.3.0) - Latest Notebooks**
+  - **[Browse Online](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.3.0/notebooks/)**
+  - **[Download](https://github.com/menpo/menpo-notebooks/archive/v0.3.0.zip)**
 
 ### Running The Notebooks Locally
 In order to experiment with the Menpo codebase, we suggest you download the
@@ -67,25 +76,4 @@ To check which version of Menpo you are using, run:
 
 inside of a Python interpreter.
 
-#### Versions
-  - v0.4.0a2
-    - [Browse](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.4.0a2/notebooks/)
-    - [Download](https://github.com/menpo/menpo-notebooks/archive/v0.4.0a2.zip)
-  - v0.4.0a1
-    - [Browse](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.4.0a1/notebooks/)
-    - [Download](https://github.com/menpo/menpo-notebooks/archive/v0.4.0a1.zip)
-  - v0.3.0
-    - [Browse](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.3.0/notebooks/)
-    - [Download](https://github.com/menpo/menpo-notebooks/archive/v0.3.0.zip)
-  - v0.2.5
-    - [Browse](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.2.5/notebooks/)
-    - [Download](https://github.com/menpo/menpo-notebooks/archive/v0.2.5.zip)
-  - v0.2.4
-    - [Browse](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.2.4/notebooks/)
-    - [Download](https://github.com/menpo/menpo-notebooks/archive/v0.2.4.zip)
-  - v0.2.3
-    - [Browse](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.2.3/notebooks/)
-    - [Download](https://github.com/menpo/menpo-notebooks/archive/v0.2.3.zip)
-  - v0.2.2
-    - [Browse](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.2.2/notebooks/)
-    - [Download](https://github.com/menpo/menpo-notebooks/archive/v0.2.2.zip)
+#### Previous Versions
