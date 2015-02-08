@@ -13,7 +13,7 @@ from docopt import docopt
 from jinja2 import Environment, FileSystemLoader
 
 from build import safe_call
-from releases import get_menpo_releases
+from releases import get_menpo_releases, get_menpofit_releases, get_menpo3d_releases, get_menpodetect_releases
 
 
 content_path = op.join(os.getcwd(), 'content')
@@ -42,24 +42,27 @@ def build_pelican():
 
 
 def build_notebooks_markdown():
-    # Get a list of all treleases from github
-    notebooks_releases = get_menpo_releases()
-    notebooks_versions = [release['tag_name'] for release in notebooks_releases]
-
-    # For every folder we found, walk through it and build a landing page
-    # for all the notebooks in that version
-    for version in notebooks_versions:
-        print('Found a version of the notebooks at: {}'.format(version))
-
-    # Build the landing page for ALL the versions (so you can choose a version
-    # to view)
-    # Get the most recent tag
-    latest_version = notebooks_versions.pop(0)
+    # Get a list of all releases from github
+    # menpodetect currently doesn't have any notebooks so we omit them here
+    projects = ['menpo', 'menpofit', 'menpo3d']
+    releases = {
+            'menpo': get_menpo_releases(),
+            'menpofit': get_menpofit_releases(),
+            'menpodetect': get_menpodetect_releases(),
+            'menpo3d': get_menpo3d_releases()
+            }
+    previous_versions = {}
+    latest_versions = {}
+    for p, rs in releases.items():
+        all_versions = [r['tag_name'] for r in rs]
+        latest_versions[p] = all_versions[0]
+        previous_versions[p] = all_versions[1:]
 
     all_landing_tmplt = env.get_template(nb_all_tmplt_path)
     all_landing_output = all_landing_tmplt.render(
-        previous_versions=notebooks_versions,
-        latest_version=latest_version)
+        projects=projects,
+        previous_versions=previous_versions,
+        latest_versions=latest_versions)
     with open(op.join(pages_path, 'notebooks.md'), 'w') as f:
         f.write(all_landing_output)
 
@@ -72,3 +75,4 @@ def run(args=None):
 if __name__ == '__main__':
     args = docopt(__doc__)
     run(args=args)
+
