@@ -71,9 +71,6 @@ inside of a Python interpreter.
   - **v0.3.0** [browse](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.3.0/notebooks/) [download](https://github.com/menpo/menpo-notebooks/archive/v0.3.0.zip)
 
 #### menpofit
-  - **v0.1.0a2** [browse](http://nbviewer.ipython.org/github/menpo/menpofit-notebooks/tree/v0.1.0a2/notebooks/) [download](https://github.com/menpo/menpofit-notebooks/archive/v0.1.0a2.zip)
-  - **v0.1.0a1** [browse](http://nbviewer.ipython.org/github/menpo/menpofit-notebooks/tree/v0.1.0a1/notebooks/) [download](https://github.com/menpo/menpofit-notebooks/archive/v0.1.0a1.zip)
 
 #### menpo3d
-  - **v0.1.0a1** [browse](http://nbviewer.ipython.org/github/menpo/menpo3d-notebooks/tree/v0.1.0a1/notebooks/) [download](https://github.com/menpo/menpo3d-notebooks/archive/v0.1.0a1.zip)
 
