@@ -2,7 +2,7 @@ Title: Notebooks
 url: notebooks.html
 save_as: notebooks.html
 
-  - **menpo v0.4.1** - [browse online](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.4.1/notebooks/) - [download](https://github.com/menpo/menpo-notebooks/archive/v0.4.1.zip)
+  - **menpo v0.4.2** - [browse online](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.4.2/notebooks/) - [download](https://github.com/menpo/menpo-notebooks/archive/v0.4.2.zip)
   - **menpofit v0.1.0** - [browse online](http://nbviewer.ipython.org/github/menpo/menpofit-notebooks/tree/v0.1.0/notebooks/) - [download](https://github.com/menpo/menpofit-notebooks/archive/v0.1.0.zip)
   - **menpo3d v0.1.0** - [browse online](http://nbviewer.ipython.org/github/menpo/menpo3d-notebooks/tree/v0.1.0/notebooks/) - [download](https://github.com/menpo/menpo3d-notebooks/archive/v0.1.0.zip)
 
@@ -67,6 +67,7 @@ To check which version of Menpo you are using, run:
 inside of a Python interpreter.
 
 #### menpo
+  - **v0.4.1** [browse](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.4.1/notebooks/) [download](https://github.com/menpo/menpo-notebooks/archive/v0.4.1.zip)
   - **v0.4.0** [browse](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.4.0/notebooks/) [download](https://github.com/menpo/menpo-notebooks/archive/v0.4.0.zip)
   - **v0.3.0** [browse](http://nbviewer.ipython.org/github/menpo/menpo-notebooks/tree/v0.3.0/notebooks/) [download](https://github.com/menpo/menpo-notebooks/archive/v0.3.0.zip)
 
