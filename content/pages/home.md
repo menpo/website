@@ -65,5 +65,5 @@ started.
 
 ### Citing the Menpo project
 <pre>
-Joan Alabort-i-Medina, Epameinondas Antonakos, James Booth, Patrick Snape and Stefanos Zafeiriou, "Menpo: A Comprehensive Platform for Parametric Image Alignment and Visual Deformable Models.", In Proceedings of the international conference on Multimedia, ACM, 2014.
+Joan Alabort-i-Medina, Epameinondas Antonakos, James Booth, Patrick Snape and Stefanos Zafeiriou, "Menpo: A comprehensive platform for parametric image alignment and visual deformable models", In Proceedings of the ACM International Conference on Multimedia, MM ’14, pages 679-682, New York, NY, USA, 2014. ACM.
 </pre> [[Bibtex]({filename}/pages/paper/menpo.bib)] [[pdf]({filename}/pages/paper/Menpo_ACM_MM_2014.pdf)]
