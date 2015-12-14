@@ -149,7 +149,7 @@ when the extracting and linking processes show **COMPLETE**.
 
 ### Begin Using Menpo {: #notebooks}
 In order to start using Menpo, we suggest you have a look through our collection
-of IPython notebooks. They can be found [here]({filename}/pages/notebooks.md).
+of Jupyter notebooks. They can be found [here]({filename}/pages/notebooks.md).
 Follow the instructions there to download the notebooks and run them. If you
 need more help you can consult the
 [documentation](http://menpo.readthedocs.org) or ask for help on the

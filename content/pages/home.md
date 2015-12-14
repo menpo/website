@@ -17,7 +17,7 @@ that is particularly useful for Machine Learning and Computer Vision. The core
 ``menpo`` library contains a number of powerful tools for manipulating
 *annotated* image and mesh data. ``menpo`` focuses on making importing, 
 manipulating and visualizing data as simple as possible. This makes us strong 
-supporters of projects like the [IPython notebook](http://ipython.org/).
+supporters of projects like the [Jupyter notebook](http://jupyter.org/).
 
 On top of the core ``menpo`` library, we have implemented a number of other 
 libraries that utilize ``menpo`` for more specific purposes. Currently, the
