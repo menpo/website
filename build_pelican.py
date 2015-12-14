@@ -44,7 +44,7 @@ def build_pelican():
 def build_notebooks_markdown():
     # Get a list of all releases from github
     # menpodetect currently doesn't have any notebooks so we omit them here
-    projects = ['menpo', 'menpofit', 'menpo3d']
+    projects = ['menpo', 'menpofit']
     releases = {
             'menpo': get_menpo_releases(),
             'menpofit': get_menpofit_releases(),
