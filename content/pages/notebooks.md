@@ -3,7 +3,7 @@ url: notebooks.html
 save_as: notebooks.html
 
   - **menpo v0.6.2** - [browse online](http://nbviewer.jupyter.org/github/menpo/menpo-notebooks/tree/v0.6.2/notebooks/) - [download](https://github.com/menpo/menpo-notebooks/archive/v0.6.2.zip)
-  - **menpofit v0.3.0** - [browse online](http://nbviewer.jupyter.org/github/menpo/menpofit-notebooks/tree/v0.3.0/notebooks/) - [download](https://github.com/menpo/menpofit-notebooks/archive/v0.3.0.zip)
+  - **menpofit v0.3.1** - [browse online](http://nbviewer.jupyter.org/github/menpo/menpofit-notebooks/tree/v0.3.1/notebooks/) - [download](https://github.com/menpo/menpofit-notebooks/archive/v0.3.1.zip)
 
 As part of the project, we maintain a set of Jupyter notebooks that help
 illustrate how Menpo should be used.
@@ -79,6 +79,7 @@ inside of a Python interpreter.
   - **v0.3.0** [browse](http://nbviewer.jupyter.org/github/menpo/menpo-notebooks/tree/v0.3.0/notebooks/) [download](https://github.com/menpo/menpo-notebooks/archive/v0.3.0.zip)
 
 #### menpofit
+  - **v0.3.0** [browse](http://nbviewer.jupyter.org/github/menpo/menpofit-notebooks/tree/v0.3.0/notebooks/) [download](https://github.com/menpo/menpofit-notebooks/archive/v0.3.0.zip)
   - **v0.2.1** [browse](http://nbviewer.jupyter.org/github/menpo/menpofit-notebooks/tree/v0.2.1/notebooks/) [download](https://github.com/menpo/menpofit-notebooks/archive/v0.2.1.zip)
   - **v0.2.0** [browse](http://nbviewer.jupyter.org/github/menpo/menpofit-notebooks/tree/v0.2.0/notebooks/) [download](https://github.com/menpo/menpofit-notebooks/archive/v0.2.0.zip)
   - **v0.1.0** [browse](http://nbviewer.jupyter.org/github/menpo/menpofit-notebooks/tree/v0.1.0/notebooks/) [download](https://github.com/menpo/menpofit-notebooks/archive/v0.1.0.zip)

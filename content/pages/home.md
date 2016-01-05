@@ -19,6 +19,10 @@ that is particularly useful for Machine Learning and Computer Vision. The core
 manipulating and visualizing data as simple as possible. This makes us strong 
 supporters of projects like the [Jupyter notebook](http://jupyter.org/).
 
+The Menpo project also includes another tool that makes annotating new datasets
+even easier! Freely available a [landmarker.io](https://www.landmarker.io), the 
+landmarker is a tool that makes it simple to annotate new images.
+
 On top of the core ``menpo`` library, we have implemented a number of other 
 libraries that utilize ``menpo`` for more specific purposes. Currently, the
 Menpo project libraries include:
@@ -28,7 +32,7 @@ Menpo project libraries include:
     exporting.  
     [![Github Release][m_shield]][m_gh] [![BSD License][bsd_shield]][m_lic]
   - ``menpofit``: a statistical modelling toolkit, providing all the tools 
-    required to build, fit, visualize, and test deformable models like
+    required to build, fit and test deformable models like
     **Active Appearance Models**, **Constrained Local Models** and
     **Supervised Descent Method**.  
     [![Github Release][mf_shield]][mf_gh] [![BSD License][bsd_shield]][mf_lic]
@@ -41,6 +45,9 @@ Menpo project libraries include:
     BSD license and so care must be taken when using this project to adhere
     to the sub-project licenses.  
     [![Github Release][md_shield]][md_gh] [![BSD License][bsd_shield]][md_lic]
+   - ``menpowidgets``: provides Jupyter notebook interactive widgets. These widgets
+     are for all of the Menpo project subprojects including ``menpo`` and ``menpofit``.  
+    [![Github Release][mw_shield]][mw_gh] [![BSD License][bsd_shield]][mw_lic]
     
   [bsd_shield]: http://img.shields.io/badge/License-BSD-green.svg
   [m_shield]: http://img.shields.io/github/release/menpo/menpo.svg
@@ -55,13 +62,16 @@ Menpo project libraries include:
   [md_shield]: http://img.shields.io/github/release/menpo/menpodetect.svg
   [md_gh]: http://github.com/menpo/menpodetect
   [md_lic]: https://github.com/menpo/menpodetect/blob/master/LICENSE.txt
+  [mw_shield]: http://img.shields.io/github/release/menpo/menpowidgets.svg
+  [mw_gh]: http://github.com/menpo/menpowidgets
+  [mw_lic]: https://github.com/menpo/menpowidgets/blob/master/LICENSE.txt
 
 ### Installation
 The Menpo project is written in **Python** and we provide a simple and easy 
 method of installation using [Conda](http://conda.pydata.org/). We suggest you 
 head over to the 
 [installation instructions]({filename}/pages/installation/index.md) to get 
-started.
+started. We recommend the use of ``conda`` due to the fact that the Menpo projects also include compiled ``C/C++`` code which may be complicated to compile on various platforms.
 
 ### Citing the Menpo project
 <pre>
