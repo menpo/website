@@ -1,6 +1,5 @@
-Title: OS X Installation
-url: installation/osx/index.html
-save_as: installation/osx/index.html
+OS X Installation
+=================
 
 In these instructions we aim to make it very simple to install Menpo.
 If anything is *at all* unclear, please let us know on the
@@ -8,7 +7,7 @@ If anything is *at all* unclear, please let us know on the
 
 *If you already have a conda environment, and consider yourself a conda expert,
 you may want to view the 
-[short instructions]({filename}/pages/installation/osx/expert.md).*
+[short instructions](expert.md).*
 
 **It is important to note that as part of the installation, you will be creating
 an isolated environment to execute Python inside. Make sure that this
@@ -31,7 +30,7 @@ a number of commands in the terminal. You can access the terminal by pressing
 **Command + Space** to open spotlight and search for **terminal**.
 
 ********************************************************************************
-![OS X Find Terminal]({filename}/pages/installation/osx/images/OSX-Terminal.png)
+![OS X Find Terminal](images/OSX-Terminal.png)
 ********************************************************************************
 
 We only support Menpo on the newer Intel Mac machines, all of which are 64-bit.
@@ -46,7 +45,7 @@ an installation package called **Miniconda**.
 Download the **Python 2** copy of Miniconda for OSX.
 
 ********************************************************************************
-![OS X Miniconda Landing Page]({filename}/pages/installation/osx/images/OSX-Miniconda-Landing.png)
+![OS X Miniconda Landing Page](images/OSX-Miniconda-Landing.png)
 ********************************************************************************
 
 After downloading Miniconda, you need to change to that directory within a
@@ -67,7 +66,7 @@ prompted whether or not the installer should prepend the Miniconda install
 location to your **PATH**:
 
 ********************************************************************************
-![Miniconda Advanced Installation Options]({filename}/pages/installation/osx/images/OSX-Miniconda-Settings.png)
+![Miniconda Advanced Installation Options](images/OSX-Miniconda-Settings.png)
 ********************************************************************************
 
 ### Using Conda {: #using_conda}
@@ -101,7 +100,7 @@ Conda will create a new environment for you and give you some information
 about activating your new environment called `menpo`.
 
 ********************************************************************************
-![Environment Created]({filename}/pages/installation/osx/images/OSX-Env-Created.png)
+![Environment Created](images/OSX-Env-Created.png)
 ********************************************************************************
 
 Now, activate the `menpo` environment with the command:
@@ -110,7 +109,7 @@ Now, activate the `menpo` environment with the command:
     $ source activate menpo
 
 ********************************************************************************
-![Activate Menpo Environment]({filename}/pages/installation/osx/images/OSX-Activate-Env.png)
+![Activate Menpo Environment](images/OSX-Activate-Env.png)
 ********************************************************************************
 
 Notice that the terminal is new prefixed with a label:
@@ -134,7 +133,7 @@ created. As before, Conda will prompt you to proceed, type **y** and press
 **Enter** to continue.
 
 ********************************************************************************
-![Accept Install]({filename}/pages/installation/osx/images/OSX-Install-Accept.png)
+![Accept Install](images/OSX-Install-Accept.png)
 ********************************************************************************
 
 It may take a short time to download and install all of Menpo's dependencies,
@@ -142,14 +141,14 @@ during which you will see a number of progress bars. The command is complete
 when the extracting and linking processes show **COMPLETE**.
 
 ********************************************************************************
-![Installation Complete]({filename}/pages/installation/osx/images/OSX-Install-Complete.png)
+![Installation Complete](images/OSX-Install-Complete.png)
 ********************************************************************************
 
 **Congratulations! You have now installed the latest version of Menpo!**
 
 ### Begin Using Menpo {: #notebooks}
 In order to start using Menpo, we suggest you have a look through our collection
-of Jupyter notebooks. They can be found [here]({filename}/pages/notebooks.md).
+of Jupyter notebooks. They can be found [here](../../notebooks.md).
 Follow the instructions there to download the notebooks and run them. If you
 need more help you can consult the
 [documentation](http://menpo.readthedocs.org) or ask for help on the

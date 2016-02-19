@@ -1,6 +1,5 @@
-Title: Frequently Asked Questions (FAQ)
-url: faq.html
-save_as: faq.html
+Frequently Asked Questions (FAQ)
+================================
 
   1. [What license is Menpo under?](#license)
   2. [How do I cite Menpo?](#citation)
@@ -20,7 +19,7 @@ Menpo has been accepted to appear at the
 
 <pre>
 Joan Alabort-i-Medina, Epameinondas Antonakos, James Booth, Patrick Snape and Stefanos Zafeiriou, "Menpo: A Comprehensive Platform for Parametric Image Alignment and Visual Deformable Models.", In Proceedings of the international conference on Multimedia, ACM, 2014.
-</pre> [[Bibtex]({filename}/pages/paper/menpo.bib)] [[pdf]({filename}/pages/paper/Menpo_ACM_MM_2014.pdf)]
+</pre> [[Bibtex](paper/menpo.bib)] [[pdf](paper/Menpo_ACM_MM_2014.pdf)]
 
 Therefore, this publication is the reference paper to cite if you use Menpo 
 within **any academic paper**. We request that you if do use Menpo for an

@@ -33,14 +33,14 @@ Download and install [Visual Studio 2008 Express](http://go.microsoft.com/?linki
 Unfortunately, preparing a 64-bit environment is non-trivial. We need to download and install a specific version of the Windows SDK in order to give VS access to a 64-bit compiler. It is important that the following instructions are completed in **the order given!**
 
   1. Download and install the [Windows SDK](http://www.microsoft.com/en-ca/download/details.aspx?id=3138) to install the 64-bit compiler. It's important to use that exact file.
-    - The options to choose are given below ![Win SDK options]({filename}/articles/images/winsdk_options.png)
+    - The options to choose are given below ![Win SDK options](images/winsdk_options.png)
   2. Run the ``Windows SDK Configuration Tool`` from the Start Menu and choose ``7.0``
   3. After installing the Windows SDK, go to ``Programs And Features``
     - Run `Repair` or `Change->Repair` (unbelievable, but you actually **have** to do this)
     - Restart your computer
-  4. Install [this patch]({filename}/articles/files/VCE64BIT_WIN7SDK.zip)[^3] and run the appropriate batch file for your system version (32 or 64)
+  4. Install [this patch](files/VCE64BIT_WIN7SDK.zip)[^3] and run the appropriate batch file for your system version (32 or 64)
     - Run the command from a prompt so that you can see the output -> A number of registry entries will be edited
-    - Two file copies will happen and **both should be successful** ![Output of successful patching]({filename}/articles/images/successful_patch.png)
+    - Two file copies will happen and **both should be successful** ![Output of successful patching](images/successful_patch.png)
     - **In the event the files do not copy, manually copy them as described in the copy command**
   5. Copy the following file
 

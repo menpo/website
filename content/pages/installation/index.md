@@ -12,9 +12,9 @@ platforms.
 
 **Before we begin, please choose an operating system:**
 
-  - [Windows]({filename}/pages/installation/windows/index.md)
-  - [OS X]({filename}/pages/installation/osx/index.md)
-  - [Linux]({filename}/pages/installation/linux/index.md)
+  - [Windows](windows/index.md)
+  - [OS X](osx/index.md)
+  - [Linux](linux/index.md)
   
 
 ### Installing The Other Libraries

@@ -1,11 +1,10 @@
-Title: Linux Expert Installation
-url: installation/linux/expert.html
-save_as: installation/linux/expert.html
+Linux Expert Installation
+=========================
 
 We assume you are very familiar with the Linux environment and with entering
 commands inside a terminal. If you feel uncomfortable with this, or at
 any time you feel confused, please refer to the
-[full instructions.]({filename}/pages/installation/linux/index.md)
+[full instructions.](index.md)
 
 **It is important to note that as part of the installation, you will be creating
 an isolated environment to execute Python inside. Make sure that this
@@ -40,5 +39,5 @@ environment is activated in order to be able to use Menpo!**
         :::console
         (menpo)$ conda install -c menpo menpo
 
-  7. Head over to the [notebooks page]({filename}/pages/notebooks.md) to begin
+  7. Head over to the [notebooks page](../../notebooks.md) to begin
      experimenting with Menpo.

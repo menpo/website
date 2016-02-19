@@ -1,14 +1,13 @@
-Title: Welcome to the Menpo project!
-url:
-save_as: index.html
+Welcome to the Menpo project!
+=============================
 
 <div style="display: table; margin: 0 auto; margin-bottom: 20px;">
-	<img alt="Example Face Fitting 1" src="pages/images/face_examples/example_1.png" style="border:1px solid #021a40; margin-right: 2px;">
-	<img alt="Example Face Fitting 2" src="pages/images/face_examples/example_2.png" style="border:1px solid #021a40; margin-right: 2px;">
-	<img alt="Example Face Fitting 3" src="pages/images/face_examples/example_3.png" style="border:1px solid #021a40; margin-right: 2px;">
-	<img alt="Example Face Fitting 4" src="pages/images/face_examples/example_4.png" style="border:1px solid #021a40; margin-right: 2px;">
-	<img alt="Example Face Fitting 5" src="pages/images/face_examples/example_5.png" style="border:1px solid #021a40; margin-right: 2px;">
-	<img alt="Example Face Fitting 6" src="pages/images/face_examples/example_6.png" style="border:1px solid #021a40;">
+	<img alt="Example Face Fitting 1" src="images/face_examples/example_1.png" style="border:1px solid #021a40; margin-right: 2px;">
+	<img alt="Example Face Fitting 2" src="images/face_examples/example_2.png" style="border:1px solid #021a40; margin-right: 2px;">
+	<img alt="Example Face Fitting 3" src="images/face_examples/example_3.png" style="border:1px solid #021a40; margin-right: 2px;">
+	<img alt="Example Face Fitting 4" src="images/face_examples/example_4.png" style="border:1px solid #021a40; margin-right: 2px;">
+	<img alt="Example Face Fitting 5" src="images/face_examples/example_5.png" style="border:1px solid #021a40; margin-right: 2px;">
+	<img alt="Example Face Fitting 6" src="images/face_examples/example_6.png" style="border:1px solid #021a40;">
 </div>
 <div style="clear: both;"></div>
 
@@ -45,8 +44,8 @@ Menpo project libraries include:
     BSD license and so care must be taken when using this project to adhere
     to the sub-project licenses.  
     [![Github Release][md_shield]][md_gh] [![BSD License][bsd_shield]][md_lic]
-   - ``menpowidgets``: provides Jupyter notebook interactive widgets. These widgets
-     are for all of the Menpo project subprojects including ``menpo`` and ``menpofit``.  
+  - ``menpowidgets``: provides Jupyter notebook interactive widgets. These widgets
+    are for all of the Menpo project subprojects including ``menpo`` and ``menpofit``.  
     [![Github Release][mw_shield]][mw_gh] [![BSD License][bsd_shield]][mw_lic]
     
   [bsd_shield]: http://img.shields.io/badge/License-BSD-green.svg
@@ -70,10 +69,10 @@ Menpo project libraries include:
 The Menpo project is written in **Python** and we provide a simple and easy 
 method of installation using [Conda](http://conda.pydata.org/). We suggest you 
 head over to the 
-[installation instructions]({filename}/pages/installation/index.md) to get 
+[installation instructions](installation/index.md) to get 
 started. We recommend the use of ``conda`` due to the fact that the Menpo projects also include compiled ``C/C++`` code which may be complicated to compile on various platforms.
 
 ### Citing the Menpo project
 <pre>
 Joan Alabort-i-Medina, Epameinondas Antonakos, James Booth, Patrick Snape and Stefanos Zafeiriou, "Menpo: A comprehensive platform for parametric image alignment and visual deformable models", In Proceedings of the ACM International Conference on Multimedia, MM ’14, pages 679-682, New York, NY, USA, 2014. ACM.
-</pre> [[Bibtex]({filename}/pages/paper/menpo.bib)] [[pdf]({filename}/pages/paper/Menpo_ACM_MM_2014.pdf)]
+</pre> [[Bibtex](paper/menpo.bib)] [[pdf](paper/Menpo_ACM_MM_2014.pdf)]

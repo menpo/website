@@ -22,8 +22,7 @@ Jupyter.
 In order to experiment with the Menpo codebase, we suggest you download the
 notebooks and run them yourself. Before being able to run the notebooks you
 **must install menpo**. Head to the
-[installation instructions]({filename}/pages/installation/index.md) before
-continuing.
+[installation instructions](index.md) before continuing.
 
  1. Start by downloading the notebooks and extracting the zip somewhere on your
     local disk. Please substitute **NOTEBOOKS_PATH** with this path in the

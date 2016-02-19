@@ -1,8 +1,7 @@
-Title: The Core Menpo Team!
-url: team.html
-save_as: team.html
+Team Menpo
+==========
 
-At the moment, Menpo is a student led effort consisting of a team of 4 full
+Menpo is a student led effort consisting of a team of 4 full
 time PhD candidates and 1 lecturer at Imperial College London.
 We are all members of the [IBUG](http://ibug.doc.ic.ac.uk/) team and are
 actively investigating the areas of deformable modelling and parametric image
@@ -16,7 +15,7 @@ If you feel like you want to contribute in any way, please head over to our
 ### Members
 #### Joan Alabort-i-Medina {: #joan}
 <div>
-<img alt="Joan Alabort-i-Medina" src="pages/images/team/joan_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
+<img alt="Joan Alabort-i-Medina" src="images/team/joan_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
 
 Joan is a PhD student at the Department of Computing, Imperial College London,
 under the supervision of [Dr. Stefanos Zafeiriou](#stefanos).
@@ -29,7 +28,7 @@ Deformable Face Tracking and Affect Analysis.
 
 #### Epameinondas Antonakos {: #nontas}
 <div style="clear: both;">
-<img alt="Nontas Antonakos" src="pages/images/team/nontas_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
+<img alt="Nontas Antonakos" src="images/team/nontas_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
 
 Epameinondas is a Research Assistant/PhD student at the Department of Computing
 at Imperial College London, under the supervision of
@@ -42,7 +41,7 @@ Machine Learning with applications in Human-Computer Interaction.
 
 #### James Booth {: #james}
 <div style="clear: both;">
-<img alt="James Booth" src="pages/images/team/james_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
+<img alt="James Booth" src="images/team/james_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
 
 James is a PhD candidate under the supervision of
 [Dr. Stefanos Zafeiriou](#stefanos) investigating the robust creation
@@ -53,7 +52,7 @@ of 3D Morphable Models.
 
 #### Patrick Snape {: #patrick}
 <div style="clear: both;">
-<img alt="Patrick Snape" src="pages/images/team/patrick_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
+<img alt="Patrick Snape" src="images/team/patrick_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
 
 
 Patrick is a PhD candidate under the supervision of
@@ -68,7 +67,7 @@ stereo.
 
 #### Dr. Stefanos Zafeiriou {: #stefanos}
 <div style="clear: both;">
-<img alt="Stefanos Zafeiriou" src="pages/images/team/stefanos_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
+<img alt="Stefanos Zafeiriou" src="images/team/stefanos_portrait.png" class="left" style="border:1px solid #021a40; margin-right: 20px;">
 
 Dr. Stefanos Zafeiriou is a Lecturer (equivalent to Assistant Professor) in
 Pattern Recognition/Statistical Machine Learning for Computer Vision in the

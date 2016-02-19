@@ -5,7 +5,7 @@ save_as: installation/windows/expert.html
 We assume you are very familiar with the Windows environment and with entering
 commands in to the command prompt. If you feel uncomfortable with this, or at
 any time you feel confused, please refer to the
-[full instructions.]({filename}/pages/installation/windows/index.md)
+[full instructions.](index.md)
 
 **It is important to note that as part of the installation, you will be creating
 an isolated environment to execute Python inside. Make sure that this
@@ -33,5 +33,5 @@ environment is activated in order to be able to use Menpo!**
         :::console
         [menpo] C:\>conda install -c menpo menpo
 
-  6. Head over to the [notebooks page]({filename}/pages/notebooks.md) to begin
+  6. Head over to the [notebooks page](../../notebooks.md) to begin
      experimenting with Menpo.
